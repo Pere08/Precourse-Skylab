@@ -45,7 +45,7 @@ function bingo() {
     } while (!check);
 
     check = false;
-    checkLinia = false;
+    let checkLinia = false;
     let numBombo;
     let linia;
     let bingoCarton;
@@ -210,7 +210,7 @@ function revisarCarton(obj, num) {
 }
 
 function hayLinia(carton){
-  linia = [0,0,0];
+  let linia = [0,0,0];
   for(const fila in carton){
       for(const col in carton[fila]){
           if (fila.localeCompare("fila1")==0) {
