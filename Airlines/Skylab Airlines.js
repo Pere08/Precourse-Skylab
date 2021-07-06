@@ -23,7 +23,7 @@ let flights = [
   
       for (let r = 0; r < flights.length; r++) {
         console.log("El vuelo con origen " + flights[r].from + " y destino " + flights[r].to + "tiene un coste de " + flights[r].cost + "€ y " + (flights[r].scale ? "se" : "no se") + " realizan escalas");
-        costeMedio =+ flights[r].cost;
+        costeMedio += flights[r].cost;
         flights[r].scale ? realizanEscala++ : realizanEscala;
         flights[r].id >= flights.length-5 ? arr.push(flights[r].to) : null;
       }
